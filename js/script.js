@@ -1,44 +1,44 @@
 // Snack 1 Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. 
-// const bike = [
-//     {
-//         nome : 'mtb',
-//         peso : 12,
-//     },
-//     {
-//         nome : 'classic',
-//         peso : 20,
-//     },
-//     {
-//         nome : 'elettric',
-//         peso : 17,
-//     },
-//     {
-//         nome : 'bmx',
-//         peso : 10,
-//     },
-// ];
+const bike = [
+    {
+        nome : 'mtb',
+        peso : 12,
+    },
+    {
+        nome : 'classic',
+        peso : 20,
+    },
+    {
+        nome : 'elettric',
+        peso : 17,
+    },
+    {
+        nome : 'bmx',
+        peso : 10,
+    },
+];
 
-// // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
-// let lightBike = bike[0];
+// Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+let lightBike = bike[0];
 
-// for(let i = 1; i < bike.length; i++) {
-//     if(bike[i].peso < lightBike.peso){
-//         lightBike = bike[i];
-//     }
-// }
-// console.log(lightBike);
+for(let i = 1; i < bike.length; i++) {
+    if(bike[i].peso < lightBike.peso){
+        lightBike = bike[i];
+    }
+}
+console.log(lightBike);
 
-// // destrutturo:
-// let {nome, peso} = lightBike;
-// console.log(nome, peso);
+// destrutturo:
+let {nome, peso} = lightBike;
+console.log(nome, peso);
 
-// // stampo con template literal:l 
-// lightBike = `
-// <h2>Nome: ${nome}</h2>
-// <h2>Peso: ${peso}</h2>
-// `;
+// stampo con template literal:l 
+lightBike = `
+<h2>Nome: ${nome}</h2>
+<h2>Peso: ${peso}</h2>
+`;
 
-// document.getElementById('bici').innerHTML = lightBike;
+document.getElementById('bici').innerHTML = lightBike;
 
 
 
