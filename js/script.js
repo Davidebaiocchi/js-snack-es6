@@ -71,6 +71,11 @@ const team = [
 
 
  // definisco nuovo array
+ // funzione per numeri random 
+ const numeroRandom = (min, max) => {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
  let nuovoArray = [];
 
  for (let i = 0; i < team.length; i++) {
@@ -90,7 +95,3 @@ const team = [
  }
  console.log(nuovoArray);
 
-// funzione per numeri random 
- function numeroRandom(min, max) {
-     return Math.floor(Math.random() * (max - min) ) + min;
- }
